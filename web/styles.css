@@ -1,0 +1,17 @@
+#nftsTable th:nth-child(2),
+#nftsTable td:nth-child(2),
+#nftsTable th:nth-child(5),
+#nftsTable td:nth-child(5) {
+  max-width: 150px;
+}
+
+#transactionsTable th:nth-child(2),
+#transactionsTable td:nth-child(2),
+#transactionsTable th:nth-child(3),
+#transactionsTable td:nth-child(3),
+#tokensTable th:nth-child(4),
+#tokensTable td:nth-child(4),
+#tokensTable th:nth-child(5),
+#tokensTable td:nth-child(5) {
+  max-width: 200px;
+}

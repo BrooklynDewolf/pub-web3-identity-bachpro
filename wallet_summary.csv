@@ -1,0 +1,50 @@
+Wallet Address;Total Transactions;Total ERC20 Transactions;Transaction Categories;ERC20 Transaction Categories;NFT Categories
+0x3d4b2941Ca2acbC6E7586E4C6160E4a0d891088A;56;53;{"unknown":49,"DeFi":7};{"DeFi":4,"unknown":49};{"game-items":1}
+0x8b64a2F7C555Afb5fcB7Cd59C7BC57ca17033105;51;1;{"unknown":46,"DeFi":1,"Games":4};{"DeFi":1};{"game-items":2,"digital art":3}
+0xF832720689CD3720cB0Ddb839CFcE4c24A379ECf;442;923;{"unknown":442};{"unknown":923};{"digital art":10}
+0x06a910AF804e981D2cD3E21D00A1BDd18667D9f0;163;92;{"unknown":161,"Social":1,"Games":1};{"unknown":92};{"digital art":10}
+0xb37287e045646fb6A40FC7424CbB48E9fecCaa64;696;188;{"unknown":684,"DeFi":12};{"unknown":171,"DeFi":17};{"digital art":10}
+0xFE458B964e80DCeAfA68F7990fC013812Eb35266;21;20;{"unknown":13,"Gambling":8};{"Gambling":9,"unknown":11};{}
+0x1Bf0715C34cD8B1Bd866acc12699345FDFF1bedE;14;9;{"unknown":10,"Games":1,"DeFi":3};{"Games":1,"unknown":5,"DeFi":3};{}
+0x96FD442b9402d47e83714C9075D446d34c37776F;10000;815;{"unknown":10000};{"unknown":807,"DeFi":8};{}
+0x5c2F30D4CD955e13611F6CE2e861fBC624eacCb1;225;242;{"unknown":225};{"unknown":242};{}
+0xD22e55D1bf83CB2dA35589DaFdD57f76cA2b7290;5;0;{"Gambling":4,"unknown":1};{};{}
+0xaA845E1B0d8bA90665F26a40A1383b90448F2Bf3;463;6;{"unknown":462,"DeFi":1};{"unknown":6};{"game-items":10}
+0xeFFd1ba8Db0516e9970FcCC8E1387f6D19f3850E;0;1;{};{"unknown":1};{}
+0x138A3dEEA335fF85F370CF44051192bB66329c08;270;0;{"unknown":270};{};{}
+0x00256459aB74f94521CD393BC9634707F8aCC4aB;5175;1037;{"unknown":4966,"Games":209};{"unknown":1037};{"digital art":9,"game-items":1}
+0x1f90c96D146d790697c432c55f1Dbb4A6bD404Fa;3722;6947;{"unknown":3722};{"unknown":6947};{}
+0x453695ebAEBCb111049F12Ea440733Ae3F863e14;161;116;{"unknown":150,"DeFi":11};{"unknown":98,"DeFi":18};{}
+0x76ABE64a728868588B2c04ffAE646CA3d80340DE;3;4;{"unknown":3};{"unknown":4};{}
+0x76ABE64a728868588B2c04ffAE646CA3d80340DE;3;4;{"unknown":3};{"unknown":4};{}
+0xa83114A443dA1CecEFC50368531cACE9F37fCCcb;10000;360;{"unknown":10000};{"unknown":360};{}
+0x7e4ABd63A7C8314Cc28D388303472353D884f292;2;0;{"unknown":2};{};{"digital art":1}
+0x11b807f68b6aF653FCEc4AFABCd24689C9730039;798;714;{"unknown":798};{"unknown":714};{}
+0xE13c82a90981Da5eD4353C03bB78A06E1cDCC5c4;36;31;{"unknown":36};{"unknown":31};{"digital art":5,"game-items":5}
+0x9Ca4E9bEE66B175515338483F3314704b1959A6d;181;60;{"Gambling":68,"unknown":113};{"Gambling":13,"unknown":47};{}
+0x82aF114cEBCb99Fdea86e3264F1d9C237293989C;407;448;{"DeFi":11,"unknown":396};{"DeFi":23,"unknown":425};{}
+0xd98271ba76e8b02177237A5AA945CB745e7bac55;7;0;{"Games":4,"unknown":3};{};{"game-items":5,"digital art":3}
+0x8A600C46B633E9875e717f5dDf9208c64B4fAed5;13;10;{"unknown":13};{"unknown":10};{}
+0x6771208AA6F3277c3C71761F992AaCe23761a54C;145;2;{"unknown":145};{"unknown":2};{}
+0x4313C378Cc91eA583C91387B9216e2c03096b27f;10000;10000;{"unknown":10000};{"unknown":9936,"DeFi":64};{}
+0xD72D66A5cC5a6237292fE1b1d62818F890bA2ad2;1;0;{"unknown":1};{};{}
+0x43c46A55761b83b421F09A8d11C8040540ABA4b5;16;0;{"unknown":16};{};{}
+0x6E5f92C90eFd56E644a2d4a383e7123e9Ad88ac6;654;280;{"unknown":627,"Social":1,"DeFi":26};{"unknown":251,"DeFi":29};{"digital art":7,"game-items":3}
+0x82fD1d450D744527b7c53EFB239a78Ad78625845;3;9;{"unknown":3};{"unknown":9};{}
+0xebC20A433A1380fB90D3d58Eb3Bf1398a6143a93;37;30;{"unknown":37};{"unknown":30};{}
+0xb28fA76f76A99b5d073F78410F0A0Fcac7424aB7;8;3;{"DeFi":1,"unknown":7};{"DeFi":2,"unknown":1};{}
+0x6b100D45Afa078f5babA7849562780896b051CC6;83;27;{"unknown":83};{"unknown":27};{"digital art":1}
+0x628015A6f2e6da491Ad572210C264107DB294f6E;10000;194;{"unknown":10000};{"unknown":194};{}
+0xC9958f4169E97046b89F206087188a8A3414f454;10;0;{"unknown":9,"Games":1};{};{}
+0x05B326F209F8a76967bd7B6020e3aB6a7DF34FD0;16;10;{"unknown":16};{"unknown":10};{"digital art":1}
+0xcacfe6672d92cb29fc80ff25027be311c9ee81df;63;1;{"unknown":62,"DeFi":1};{"DeFi":1};{"game-items":2,"digital art":1}
+0x49ee6b7FcE2c8184AD0686d67dC13C2c2d507a62;12;10;{"unknown":12};{"unknown":10};{}
+0x79E088D5c4752D7a4a73B6A8d5DDD6D7EFe6A873;3335;1272;{"unknown":3280,"Social":4,"DeFi":50,"Games":1};{"unknown":1267,"DeFi":5};{"digital art":6,"game-items":4}
+0x9437890E3194b054894Ce1267a795A808Df11C86;195;5;{"Gambling":47,"unknown":148};{"unknown":5};{}
+0x304a9CA89956Bc2F921D08C8C2eD5B14669B7811;23;21;{"unknown":23};{"unknown":21};{}
+0x7Fc7958C2A8844Df68f5974c96821b4A6DE58C31;33;9292;{"unknown":33};{"unknown":8891,"DeFi":401};{}
+0x7Fc7958C2A8844Df68f5974c96821b4A6DE58C31;33;49;{"unknown":33};{"unknown":49};{}
+0xEE50296fB926a3fE56Cbff0fd32aabf4a30978Bd;10000;79;{"unknown":10000};{"unknown":79};{"digital art":10}
+0x8B7782753Eb8b684238c4E974Cdd5d098b25AA69;44;2;{"unknown":44};{"unknown":2};{"digital art":10}
+0xb280FCfAB101872E7216B7090f51D1ee0f685ddd;10000;10000;{"unknown":9985,"DeFi":15};{"unknown":9873,"DeFi":127};{}
+0x7Bff3e7BBFdB81A88C3E08Cecdc65b7FcF8b23bb;612;625;{"unknown":612};{"unknown":625};{}

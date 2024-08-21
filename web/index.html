@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web3 Wallet Tool</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light justify-content-between p-3">
+      <a class="navbar-brand">Web3 Wallet Tool</a>
+      <form class="d-inline-flex">
+        <input
+          id="demoAccount"
+          class="form-control mr-sm-2 mx-2"
+          type="search"
+          placeholder="Address (optional)"
+          aria-label="Search"
+        />
+        <button
+          id="connectButton"
+          class="btn btn-outline-success mr-2 my-2 my-sm-0"
+          type="submit"
+        >
+          Connect
+        </button>
+        <button
+          id="exportButton"
+          class="btn btn-outline-primary mr-2 my-2 my-sm-0"
+          type="submit"
+        >
+          Export
+        </button>
+        <button
+          id="clearButton"
+          class="btn btn-outline-danger my-2 my-sm-0"
+          type="submit"
+        >
+          Clear
+        </button>
+      </form>
+    </nav>
+    <div class="container my-5">
+      <div class="table-container">
+        <div class="row justify-content-center">
+          <div class="col">
+            <h3>General</h3>
+          </div>
+        </div>
+        <div class="col p-0">
+          <div class="table-responsive">
+            <table id="infoTable" class="table table-striped table-bordered">
+              <thead class="table-dark">
+                <tr>
+                  <th>Address</th>
+                  <th>Balance (ETH)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <p id="walletAddress">
+                      <span class="text-muted">N/A</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p id="walletBalance">
+                      <span class="text-muted">N/A</span>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-container mt-4">
+        <div class="row justify-content-center">
+          <div class="col">
+            <h3>
+              Transactions
+              <span class="badge badge-pill badge-secondary">Etherscan</span>
+            </h3>
+          </div>
+        </div>
+        <div class="col p-0">
+          <div class="table-responsive">
+            <table
+              id="transactionsTable"
+              class="table table-striped table-bordered"
+            >
+              <thead class="table-dark">
+                <tr>
+                  <th>Timestamp</th>
+                  <th>From</th>
+                  <th>To</th>
+                  <th>Amount (ETH)</th>
+                  <th>Category</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Transactions will be dynamically inserted here -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div id="pagination-controls">
+          <button class="btn btn-dark" id="tran-prev-page">Previous</button>
+          <span id="tran-page-info"></span>
+          <button class="btn btn-dark" id="tran-next-page">Next</button>
+        </div>
+        <div class="mt-2">
+          First transaction:
+          <span id="transaction-first" class="text-muted">N/A</span>
+        </div>
+        <div class="mt-2">
+          Last transaction:
+          <span id="transaction-last" class="text-muted">N/A</span>
+        </div>
+      </div>
+
+      <div class="table-container mt-4">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <h3 class="text-left">
+              ERC-20 Token Transactions
+              <span class="badge badge-pill badge-secondary">Etherscan</span>
+            </h3>
+          </div>
+        </div>
+        <div class="col p-0">
+          <div class="table-responsive">
+            <table id="tokensTable" class="table table-striped table-bordered">
+              <thead class="table-dark">
+                <tr>
+                  <th>Timestamp</th>
+                  <th>Token</th>
+                  <th>Value</th>
+                  <th>From</th>
+                  <th>To</th>
+                  <th>Category</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- ERC-20 Token Transactions will be dynamically inserted here -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div>
+          <button class="btn btn-dark" id="erc20-prev-page">Previous</button>
+          <span id="erc20-page-info"></span>
+          <button class="btn btn-dark" id="erc20-next-page">Next</button>
+        </div>
+        <div class="mt-2">
+          First ERC-20 transaction:
+          <span id="erc20-transaction-first" class="text-muted">N/A</span>
+        </div>
+        <div class="mt-2">
+          Last ERC-20 transaction:
+          <span id="erc20-transaction-last" class="text-muted">N/A</span>
+        </div>
+      </div>
+
+      <div class="table-container mt-4">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <h3 class="text-left">
+              NFTs <span class="badge badge-pill badge-info">OpenSea</span>
+            </h3>
+          </div>
+        </div>
+        <div class="col p-0">
+          <div class="table-responsive">
+            <table id="nftsTable" class="table table-striped table-bordered">
+              <thead class="table-dark">
+                <tr>
+                  <th>Image</th>
+                  <th class="text-truncate">Identifier</th>
+                  <th>Token Standard</th>
+                  <th>Collection</th>
+                  <th>Contract</th>
+                  <th>Category</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- NFTs will be dynamically inserted here -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div id="profile-summary" class="container mt-2 p-0">
+        <h3>Profile Summary</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <canvas id="transactionCategoriesChart"></canvas>
+          </div>
+          <div class="col-md-6">
+            <canvas id="erc20TransactionCategoriesChart"></canvas>
+          </div>
+          <div class="col-md-6">
+            <canvas id="nftCategoriesChart"></canvas>
+          </div>
+          <div class="col-md-6">
+            <canvas id="erc20TokensChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
